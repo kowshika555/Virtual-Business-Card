@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Business Card with QR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Virtual Business Card</h1>
+  <div class="container">
+    <form id="cardForm">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="designation" placeholder="Designation" required>
+      <input type="tel" id="phone1" placeholder="Phone Number 1" required>
+      <input type="tel" id="phone2" placeholder="Phone Number 2" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="company" placeholder="Company Name" required>
+      <input type="text" id="website" placeholder="Company Website" required>
+      <button type="submit">Generate Card</button>
+    </form>
+
+    <div id="businessCard" class="business-card" style="display:none;">
+      <div class="left">
+        <h2 id="cardName">Name</h2>
+        <p id="cardDesignation">Designation</p>
+        <hr>
+        <p id="cardPhone1"></p>
+        <p id="cardPhone2"></p>
+        <p id="cardEmail"></p>
+        <p id="cardCompany"></p>
+        <p id="cardWebsite"></p>
+      </div>
+      <div class="right">
+        <div id="qrcode"></div>
+      </div>
+    </div>
+
+    <button id="saveBtn" style="display:none;">Save Card</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

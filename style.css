@@ -1,0 +1,67 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.business-card {
+    align-self: center;
+    display: inline-flex;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #f07f1a;
+  width: 50%;
+  margin-left: 0;
+}
